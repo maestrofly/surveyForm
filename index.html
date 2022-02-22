@@ -7,15 +7,118 @@
   </head>
 
   <body>
-
-
-
-
-
-
-
-
+      
+    <!--title section-->
+    <div>
+      <h1 id="title">Derrick And Yarzue Survey Form</h1>
+    </div>
     
+    <div>
+        <p  id="description">Thank you for taking the time to help us improve this platform</p>
+    </div>
+
+    <div>
+      <form id="survey-form">
+         
+        <label id="name-label">name:</label><br>
+            <input type="text" required="" id="name" name="name" placeholder="Enter your name">
+            <br>
+        
+        <label id="email-label">Email:</label><br>
+            <input type="email" required="" id="email" name="your email" placeholder="Enter your Email">
+            <br>
+
+        <label id="number-label">Age:</label>
+            <input type="number" id="number" min="10" max="100" name="number" placeholder="Age" required>
+          <br>
+
+          <p>Which option best describes your current role?</p>
+          <select id="dropdown"  name="Select current role" >
+            <option value="Select current Role">Select Current Role</option>
+            <option value="Student">Student</option>
+            <option value="FullTimeJob">Full Time Job</option>
+            <option value="TimeLearner">Full Time Learner</option>
+            <option value="PreferNotToSay">Prefer not to say</option>
+            <option value="Other">Other</option>
+          </select>
+      <br>
+
+      <p>Would you recommend To a friend?</p>
+
+      <input type="radio"  name="radioButton" value="Definitely">
+      <label for="Definitely">Definitely</label>
+      <br>
+
+      <input type="radio"  name="radioButton" value="Maybe">
+      <label for="Maybe">Maybe</label>
+      <br>
+
+      <input type="radio"  name="radioButton" value="Not Sure">
+      <label for="Not sure">Not Sure</label>
+      <br>
+
+      <p>What is your favorite feature?</p>
+        <select id="dropdown"  name="Select current role" value="Select an option">
+          <option value="Select Current role">Select Current Role</option>
+            <option value="Challenges">Challenges</option>
+            <option value="Projects">Projects</option>
+            <option value="Community">Community</option>
+            <option value="OpenSource">Open Source</option>
+        </select>
+        <br>
+      
+        <p>What would you like to see improved? (Check all that apply)</p>
+        <input type="checkbox" id="topic1" name="topic1" value="Project1">
+        <label for="topic1"> Front-end Projects</label><br>
+
+        <input type="checkbox" id="topic2" name="topic2" value="Project2">
+        <label for="topic2"> Back-end Projects</label><br>
+
+        <input type="checkbox" id="topic3" name="topic3" value="Project3">
+        <label for="topic3"> Data Visualization</label><br>
+
+        <input type="checkbox" id="topic4" name="topic4" value="Project4">
+        <label for="topic4"> Challenges</label><br>
+
+        <input type="checkbox" id="topic5" name="topic5" value="Project5">
+        <label for="topic5"> Open Source Community</label><br>
+
+        <input type="checkbox" id="topic6" name="topic6" value="Project6">
+        <label for="topic6"> Gitter Help rooms</label><br>
+
+        <input type="checkbox" id="topic7" name="topic7" value="Project7">
+        <label for="topic7"> Videos</label><br>
+
+        <input type="checkbox" id="topic8" name="topic8" value="Project8">
+        <label for="topic8"> City Meetups</label><br>
+
+        <input type="checkbox" id="topic9" name="topic9" value="Project9">
+        <label for="topic9"> Wiki</label><br>
+
+        <input type="checkbox" id="topic10" name="topic10" value="Project10">
+        <label for="topic10"> Forum</label><br>
+
+        <input type="checkbox" id="topic11" name="topic11" value="Project11">
+        <label for="topic11"> Additional Courses</label><br>
+
+      <!--text area-->
+      <textarea name="message" rows="10" cols="30">
+        Enter your comments here...
+      </textarea>
+    <br>
+    <input type="submit" id="submit" value="Submit">
+
+      </form>
+    </div>
+    
+
+
+
+
+
+
+
+
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <script  src="js/index.js"></script>
   </body>
